@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explaining Explanations of Cognition</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>JaneCourse Video - Explaining Cognition</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#content" class="nav-link">Content</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section with Video Background -->
+        <section id="home" class="hero-video-section">
+            <div class="video-background">
+                <iframe 
+                    id="heroVideo"
+                    src="https://www.youtube.com/embed/bwBK9QV7C5Y?enablejsapi=1&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0&loop=1&playlist=bwBK9QV7C5Y&vq=hd1080&quality=hd1080" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="hero-content-overlay">
+                <h1 class="hero-main-title">Are Humans, Bees, and AI Doing the Same Thing When They Navigate?</h1>
+                <p class="hero-subtitle">Exploring how cognitive science explains navigation in humans, bees, and artificial intelligence</p>
+                <div class="hero-prompt">
+                    <button class="fullscreen-btn" onclick="openFullscreenVideo()">
+                        <span class="play-icon">▶</span>
+                        Watch Full Video
+                    </button>
+                </div>
+                <div class="scroll-indicator" onclick="scrollToContent()">
+                    <span>Continue Reading</span>
+                    <div class="scroll-arrow">↓</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section id="content" class="section content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Knowledge Content</h2>
+                    <p class="section-description">An in-depth exploration of different approaches to understanding cognition</p>
+                </div>
+
+                <div class="content-grid">
+                    <!-- Content Card 0: Introduction -->
+                    <div class="content-card" id="content-0">
+                        <div class="content-header">
+                            <h3 class="content-title">Introduction</h3>
+                        </div>
+                        <div class="content-body">
+                            <p>Imagine this: You, a bee, and an autonomous car all manage to get from home to your destination successfully. Each of you navigates—avoiding obstacles, adjusting routes, and reaching the goal. But here's the question: Are all of you doing the same thing underneath? That question sits at the heart of cognitive science. If different agents—biological or artificial—can perform the same cognitive task, does that mean their minds work the same way?</p>
+
+                            <div class="content-highlight">
+                                <p>With growing interest in the question "Can a machine think?", cognitive scientists have developed different ways to understand cognition. This essay explores three major approaches: the symbolic-system view, the connectionist view, and the embodied/extended cognition view. Then it also introduces deeper theoretical frameworks like David Marr's three levels of analysis and the modern "predictive processing" approach.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Card 1: Symbolic Systems -->
+                    <div class="content-card" id="content-1">
+                        <div class="content-header">
+                            <h3 class="content-title">1. The Symbolic System Approach</h3>
+                        </div>
+                        <div class="content-body">
+                            <p>The symbolic system approach is the earliest and most "logical" way of explaining thought. In the 1950s and 1960s, when computers appeared, scientists asked: Could the human mind be a kind of computer? According to this view, cognition is about symbol manipulation: our minds store representations (symbols) and apply explicit rules (if-then) to them.</p>
+
+                            <p>For example, when you decide how to walk to a friend's dorm, you might follow rules like: "If I see building A then turn right; if I reach the quad then go straight two blocks." These are rule-based operations. Early AI systems known as "expert systems" used thousands of manually written rules and did not learn; they just followed logic.</p>
+
+                            <div class="content-highlight">
+                                <p>But human thinking is not always logical or rule-based. We often rely on intuition, habits, and context. When you suddenly recognize a familiar street without consciously "computing" anything, the symbolic model starts to fail.</p>
+                            </div>
+
+                            <div class="sticker-note">
+                                <span class="note-label">Note</span>
+                                <p>Although the symbolic system approach often appears to involve explicitly following rules and representations in a way that seems more characteristic of artificial intelligence than human cognition, it is important to note that people also unconsciously or consciously apply similar processes in everyday reasoning. For example, when identifying buildings at Vassar, one might think: "Strong House is south of Lathrop, so if I walk south from Lathrop, I will reach Strong." This kind of spatial inference can be understood through the symbolic system approach, even if people do not usually frame their thinking in that way.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Card 2: Connectionism -->
+                    <div class="content-card" id="content-2">
+                        <div class="content-header">
+                            <h3 class="content-title">2. The Connectionist Approach</h3>
+                        </div>
+                        <div class="content-body">
+                            <p>As neuroscience advanced, researchers observed that the brain does not seem to operate like a step-by-step computer program but more like a network of neurons—many simple units connected and constantly adjusting. This inspired the connectionist approach. Under this view, thinking is not about applying rules but about patterns of activation across many units.</p>
+
+                            <p>When you recognize your way home, you aren't retrieving a list of rules; you're activating a familiar pattern of neural connections. In modern AI (for example, how self-driving cars learn), systems learn from millions of examples—sensor data, images, routes—and adjust internal weights until the right action is predicted. These networks may "know how" to drive, but they may not "understand" what a road means. So is that thinking, or imitation of thinking?</p>
+
+                            <div class="content-highlight">
+                                <p>In the connectionist view, cognition equals distributed learning rather than logic-based rule following.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Card 3: Embodied Cognition -->
+                    <div class="content-card" id="content-3">
+                        <div class="content-header">
+                            <h3 class="content-title">3. Embodied and Extended Cognition</h3>
+                        </div>
+                        <div class="content-body">
+                            <p>Then came a more radical idea: maybe cognition isn't just inside the brain. The embodied and extended cognition perspective argues that thinking happens through continuous interaction between brain, body, and environment.</p>
+
+                            <p>Your mind isn't sealed inside your skull—it extends into the world via your senses and actions. Imagine you're walking through an unfamiliar city. You don't just calculate your route inside your head. You look at street signs, feel the direction of the sun, hear traffic, walk and adjust. The phone's map, the sidewalks, the buildings become part of your cognitive system.</p>
+
+                            <p>The bee does something similar: it uses the sun's position, smell cues, magnetic fields to orient itself—the "intelligence" arises from body-environment interaction, not abstract rule following. The autonomous car also: its "body" is cameras, radars, sensors; without them it couldn't "perceive" or "act." So cognition is distributed: it's in the action-perception loop, not only inside a CPU.</p>
+
+                            <div class="content-highlight">
+                                <p>Thinking equals acting in a world, not detached computation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Card 4: Deeper Theoretical Views -->
+                    <div class="content-card" id="content-4">
+                        <div class="content-header">
+                            <h3 class="content-title">4. Deeper Theoretical Views</h3>
+                        </div>
+                        <div class="content-body">
+                            <p><strong>4.1 Marr's Three Levels of Analysis</strong></p>
+                            
+                            <p>Cognitive scientist David Marr proposed that to fully understand a cognitive system, you must analyze it at three distinct levels:</p>
+
+                            <ul>
+                                <li><strong>Computational level:</strong> What does the system do and why? What is the goal or function?</li>
+                                <li><strong>Algorithmic (or representation/algorithm) level:</strong> What representations and processes are used to perform that computation?</li>
+                                <li><strong>Implementation level:</strong> What physical mechanism realizes those processes (brain circuits, hardware, etc.)?</li>
+                            </ul>
+
+                            <p>This framework highlights that even if two systems do the same "function", they might differ at the algorithmic or implementation level.</p>
+
+                            <p><strong>4.2 Predictive Processing (PP)</strong></p>
+
+                            <p>In recent years, the predictive processing framework has become influential. It says that cognition is fundamentally about prediction: the brain is a prediction engine that constantly generates models of the world and then updates itself by minimizing prediction error.</p>
+
+                            <div class="content-highlight">
+                                <p>PP ties into embodied cognition because many scholars argue that predictions depend on the body and environment as much as the brain. For example, an embodied, embedded predictive processing account blends PP with the idea of body-world interactions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Card 5: Integration -->
+                    <div class="content-card" id="content-5">
+                        <div class="content-header">
+                            <h3 class="content-title">5. Integrating the Approaches: A Comparative Discussion</h3>
+                        </div>
+                        <div class="content-body">
+                            <p><strong>5.1 Function vs Mechanism vs Experience</strong></p>
+
+                            <p>From a functional perspective (as in functionalism), if two systems take the same inputs and produce the same outputs, we might say they "are thinking" the same way. But from a mechanistic perspective (thanks to Marr's levels), we ask: Are they using the same algorithms or the same implementation? If not, they might not truly be doing the same kind of cognition. From a phenomenological view (experience), human cognition involves subjective feelings (e.g., anxiety when lost), whereas AI might just compute without any experience at all.</p>
+
+                            <p><strong>5.2 Strengths and Limitations of Each Paradigm</strong></p>
+
+                            <ul>
+                                <li><strong>Symbolic systems:</strong> Good for explicit reasoning, logic, language. Weak for perception, learning, embodiment.</li>
+                                <li><strong>Connectionist systems:</strong> Good for pattern recognition, learning from experience. Weak for explaining the algorithms clearly (lack of transparency) or for embodiment.</li>
+                                <li><strong>Embodied/extended cognition:</strong> Brings body and environment into cognition. Strong for action-based, situated cognition. Harder to formalize for abstract reasoning.</li>
+                                <li><strong>Marr's framework:</strong> Useful to clarify levels of explanation, but some critique that real neural systems might blur the levels.</li>
+                                <li><strong>Predictive processing:</strong> Promising unified view, but critics say it might be so broad it loses specificity.</li>
+                            </ul>
+
+                            <p><strong>5.3 Toward Integration</strong></p>
+
+                            <p>Contemporary work often tries to combine paradigms. For instance, blending predictive processing with embodied cognition (so predictions are not just brain-internal but involve body-world loops). And when we examine a cognitive system at Marr's three levels, we can ask: What is it doing (computational)? How is it doing it (algorithmic/representation)? What is the physical or bodily basis (implementation)?</p>
+
+                            <div class="content-highlight">
+                                <p>By doing so, we can compare human, bee, and AI cognition more precisely: same function? maybe. Same algorithm/representation? maybe not. Same implementation? Almost certainly not.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Card 6: Philosophical Tension -->
+                    <div class="content-card" id="content-6">
+                        <div class="content-header">
+                            <h3 class="content-title">6. Philosophical Tension: Are These Systems "The Same"?</h3>
+                        </div>
+                        <div class="content-body">
+                            <p>Now to the heart of the matter: If humans, bees, and AI cars all complete the same task (navigation), are they doing the same thing cognitively? The functionalist answer might say yes—they have equivalent input-output mappings. But the critics reply: Function alone isn't enough. We must consider mechanism, embodiment, experience. Humans might feel something when lost; bees and machines might not. If you reach your destination, that doesn't guarantee that your internal process or experience is the same.</p>
+
+                            <div class="content-highlight">
+                                <p>What really counts as "thinking"? Is it producing the same output? Using the same internal process? Sharing the same experience? These are the philosophical tensions at the heart of cognitive science: Science asks "how does cognition happen?" Philosophy asks "what does it mean to think?"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Card 7: Conclusion -->
+                    <div class="content-card" id="content-7">
+                        <div class="content-header">
+                            <h3 class="content-title">7. Conclusion</h3>
+                        </div>
+                        <div class="content-body">
+                            <p>We've looked at three major approaches to cognition: symbolic rule-based, connectionist pattern-based, and embodied/extended action-based. We delved deeper into Marr's three levels of analysis and the predictive processing framework as more advanced theoretical tools.</p>
+
+                            <p>While different systems (human, bee, AI) can achieve the same goal, the way they do it may vary dramatically: different representations, different mechanisms, different bodily or environmental embedment. Human cognition carries meaning, experience, and embodiment in a way that machines or simpler organisms may not.</p>
+
+                            <div class="content-highlight">
+                                <p>So next time you check GPS, notice the bee flying overhead, or a self-driving car passes by, you might ask: "They all get where they're going—but are they 'thinking' the same way I am?"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Card 8: References -->
+                    <div class="content-card" id="content-8">
+                        <div class="content-header">
+                            <h3 class="content-title">References</h3>
+                        </div>
+                        <div class="content-body">
+                            <ul>
+                                <li>Marr's three levels overview: <a href="https://apsc450computationalneuroscience.com/marrs-three-levels-of-inquiry/" target="_blank">"Marr's three levels of inquiry"</a></li>
+                                <li>Marr's Levels Revisited: <a href="https://pubmed.ncbi.nlm.nih.gov/25903856/" target="_blank">"Marr's Levels Revisited: Understanding How Brains Break"</a></li>
+                                <li>Embodied cognition – Stanford Encyclopedia of Philosophy: <a href="https://plato.stanford.edu/entries/embodied-cognition/" target="_blank">Article</a></li>
+                                <li>Predictive Processing and Embodied Cognition: <a href="https://link.springer.com/article/10.1007/s11023-022-09617-7" target="_blank">"A Model Solution"</a></li>
+                                <li>Embodied, Embedded Predictive Processing: <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2021.543076/full" target="_blank">Article</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Explaining Explanations of Cognition | Yueqi Zhang, Vassar College</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

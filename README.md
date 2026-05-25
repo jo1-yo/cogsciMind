@@ -1,4 +1,3 @@
-https://imjane.top/cogsciMind/
 # Explaining Explanations of Cognition
 
 An interactive educational website exploring the question: **Are Humans, Bees, and AI Doing the Same Thing When They Navigate?**
@@ -8,6 +7,7 @@ This website presents three different approaches to understanding cognition: sym
 ## 🎓 Project Information
 
 **Title:** Explaining Explanations of Cognition  
+**Website:** https://imjane.top/cogsciMind/
 **Author:** Yueqi Zhang  
 **Institution:** Vassar College  
 **Topic:** Cognitive Science - Navigation and Cognition across Different Agents

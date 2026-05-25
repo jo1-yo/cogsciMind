@@ -1,5 +1,6 @@
 # Explaining Explanations of Cognition
 
+https://imjane.top/cogsciMind/
 An interactive educational website exploring the question: **Are Humans, Bees, and AI Doing the Same Thing When They Navigate?**
 
 This website presents three different approaches to understanding cognition: symbolic systems, connectionist approaches, and embodied cognition.
@@ -84,19 +85,7 @@ cognsci网站/
 
 ## 🔗 How to Access
 
-### Option 1: Direct File Path
-Open in your browser:
-```
-file:///Users/jane/Desktop/cognsci网站/index.html
-```
-
-### Option 2: Double-click
-Simply double-click `index.html` in Finder
-
-### Option 3: Command Line
-```bash
-open "/Users/jane/Desktop/cognsci网站/index.html"
-```
+### https://imjane.top/cogsciMind/
 
 ## 🎥 Adding Your Video
 
